@@ -30,4 +30,4 @@ It allows users to register, log in, and reset their password with proper form v
 ##  How to Run
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+https://github.com/RichajainTBT/Authentication-System
