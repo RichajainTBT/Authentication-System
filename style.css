@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.login-section {
+  background: url("./img/bg-login.jpg");
+  height: 100dvh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.login-section::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background: #00000029;
+}
+.login-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-card {
+  width: 60%;
+  min-height: 50%;
+}
+.login-right-sec-img {
+  filter: grayscale(1);
+}
+.authentecation-sec-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 15px 30px;
+}
+.authentecation-sec-body > div {
+  width: 100%;
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.authentecation-sec-body label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.btn-theme {
+  background: black;
+  color: white !important;
+  width: 100%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  font-weight: 600;
+}
+.password-field {
+  position: relative;
+}
+.hideShowPassword {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 9;
+  padding: 6px 8px;
+  width: 35px;
+  background: none !important;
+  border: 0px;
+  box-shadow: none;
+}
+.password-field input {
+  padding-right: 40px;
+}
+.link {
+  font-size: 14px;
+  margin: 6px 0px;
+  cursor: pointer;
+}
+.right-align {
+  text-align: right;
+}
+::placeholder {
+  font-size: 14px;
+}
+.link button {
+  background: none;
+  border: 0px;
+}
+#register-sec {
+  display: none;
+}
+#forgot-sec {
+  display: none;
+}
+#toast-container {
+  display: none;
+  z-index: 99;
+}
+.toast .btn-close {
+  background: none;
+  color: white;
+  font-size: 21px;
+  padding-top: 0px;
+   line-height: 0;
+}
+.error{
+    color: red;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+#update-password{
+  display: none;
+}
+#userName{
+  text-transform: capitalize;
+}
+.user-profile i{font-size: 60px;}
+@media (max-width:600px){
+  .login-card{width: 100%;}
+}
+@media (min-width:577px) and (max-width:768){
+   .login-card{width: 90%;}
+}
